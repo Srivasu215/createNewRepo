@@ -12,7 +12,7 @@ const IGNORE_DIRS = new Set([
     "node_modules",
     ".git",
     ".vscode",
-    "ast-output_ast-output"
+    "Babel_ast-output"
 ]);
 
 fs.mkdirSync(OUTPUT_DIR, { recursive: true });
