@@ -1,0 +1,1 @@
+GET http://localhost:3000/Api/V1/doctors/showAll

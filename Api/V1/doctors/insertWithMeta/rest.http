@@ -1,0 +1,6 @@
+POST http://localhost:9012/Api/V1/doctors/insertWithMeta
+Content-Type: application/json
+
+{
+  "doctorName": ""
+}
