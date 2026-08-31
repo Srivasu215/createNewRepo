@@ -4,7 +4,7 @@ import { parse } from "@babel/parser";
 
 const PROJECT_ROOT = process.cwd();
 const BASE_FILE = "app.js";
-const OUTPUT_DIR = path.join(PROJECT_ROOT, "ast-output");
+const OUTPUT_DIR = path.join(PROJECT_ROOT, "Babel_ast-output");
 const OUTPUT_FILE = path.join(OUTPUT_DIR, "project-ast.json");
 
 // Folders that should not be scanned
@@ -12,7 +12,7 @@ const IGNORE_DIRS = new Set([
     "node_modules",
     ".git",
     ".vscode",
-    "ast-output"
+    "ast-output_ast-output"
 ]);
 
 fs.mkdirSync(OUTPUT_DIR, { recursive: true });
