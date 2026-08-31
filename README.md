@@ -24,8 +24,8 @@ node Babel_ast-run.js
 ```
 
 This will create:
-- **Output folder**: `Babel_ast-output/`
-- **Analysis file**: `project-ast.json` (contains complete AST with 1882+ nodes)
+- **Output folder**: `dist/`
+- **Analysis file**: `project-ast.json`
 
 ### Sample Output
 
