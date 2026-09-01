@@ -1,36 +1,40 @@
 # Babel AST Project Analysis
+A Node.js project for analyzing JavaScript and TypeScript source code using Babel Parser.
 
-A Node.js project that analyzes JavaScript/TypeScript code and generates an Abstract Syntax Tree (AST) using Babel.
+## Overview
+- Parses source files into Babel AST.
+- Scans `.js` and `.mjs` files recursively.
+- Uses root `app.js` as the base project file.
+- Counts AST nodes and node types.
+- Generates a JSON analysis report.
 
-## Getting Started
-
-clone 
-```bash
-https://github.com/Srivasu215/createNewRepo
+## Project Structure
+```text
+createNewRepo/
+├── app.js
+├── Api/
+├── Config/
+├── Data/
+└── Analyzer/v2/
+    ├── app.js
+    ├── config.js
+    ├── analyzeFile.js
+    ├── walkAst.js
+    └── report files
 ```
-
-### Installation
-
+## Run
 ```bash
 npm install
+node Analyzer/v2/app.js
 ```
-
-### Running Babel AST Analysis
-
-Generate the AST analysis for the project:
-
-```bash
-node Babel_ast-run.js
+Run the command from the project root.
+## Output
+`dist/project-ast.json` contains the analysis report.
+## Ignored Directories
+`node_modules`, `.git`, `.vscode` and `dist` are excluded.
+## Analysis Flow
+```text
+Root app.js → Scan Files → Babel Parser → AST → Walk AST → Count Nodes → JSON
 ```
-
-This will create:
-- **Output folder**: `dist/`
-- **Analysis file**: `project-ast.json`
-
-### Sample Output
-
-The script analyzes your codebase and provides:
-- **Files Scanned**: 20
-- **Total Nodes**: 1882
-- **Node Types**: 50+
-- **Top Node Types**: Identifier (732), MemberExpression (153), CallExpression (127), etc.
+## Author
+**KeshavSoft** — Parse · Inspect · Analyze · Automate
