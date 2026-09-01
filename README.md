@@ -13,9 +13,7 @@ A Node.js project for analyzing JavaScript and TypeScript source code using Babe
 createNewRepo/
 ├── app.js
 ├── Api/
-├── Config/
-├── Data/
-└── Analyzer/v2/
+└── src/v2/
     ├── app.js
     ├── config.js
     ├── analyzeFile.js
@@ -25,7 +23,7 @@ createNewRepo/
 ## Run
 ```bash
 npm install
-node Analyzer/v2/app.js
+node src/v2/app.js
 ```
 Run the command from the project root.
 ## Output
